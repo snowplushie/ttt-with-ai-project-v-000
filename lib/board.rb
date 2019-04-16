@@ -22,7 +22,7 @@ class Board
   end
   
   def full?
-    cells.all?{|player| player == "X" || player == "O"}
+    !@cells.include?(" ")
   end
   
   def turn_count
