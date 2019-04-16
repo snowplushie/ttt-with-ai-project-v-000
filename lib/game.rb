@@ -19,7 +19,7 @@ class Game
   end
   
   def current_player
-    if turn_count(@board) % 2 == 0
+    @board.turn_count % 2 == 0
   end
 end
   
