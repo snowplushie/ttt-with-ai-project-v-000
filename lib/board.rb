@@ -10,5 +10,10 @@ class Board
   end
   
   def display
-    
+    puts "   |   |   "
+    puts "-----------"
+    puts "   |   |   "
+    puts "-----------"
+    puts "   |   |   "
+  end
 end
