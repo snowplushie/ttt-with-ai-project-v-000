@@ -52,13 +52,9 @@ class Game
     if !@board.valid_move?(move)
       move
     else
-      puts "Turn: #{@board.turn_count + 1}\n"
-      @board.display
-      @board.update(current_move, current_player)
-      puts "#{current_player} moved #{current_move}"
-      @board.display
-      puts "\n\n"
+     self.turn
     end
+    @board.update(move, current_player) && @board.display
   end
   
   def play
