@@ -28,4 +28,8 @@ class Board
   def turn_count
     cells.count{|player| player == "X" || player == "O"}
   end
+  
+  def taken?(input)
+    !(position(input) == " " || position(input) == '')
+  end
 end
