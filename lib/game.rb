@@ -39,9 +39,6 @@ class Game
   end
   
   def winner
-    if winning = won?
-      @winner = @board.cells[winning.first]
-    else return nil
-    end
+    @board.cells[won?[0]] if won?
   end
 end
