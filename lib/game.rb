@@ -47,14 +47,15 @@ class Game
   def turn
     player = current_player
     current_move = player.move(@board)
-    if !board.valid_move?(current_move)
+    if !@board.valid_move?(current_move)
       turn
     else
       puts "Turn: #{@board.turn_count + 1}\n"
-      board.display
-      board.update(current_move, current_player)
+      @board.display
+      @board.update(current_move, current_player)
       puts "#{current_player} moved #{current_move}"
-      board.display
+      @board.display
+      puts "\n\n"
     end
   end
   
