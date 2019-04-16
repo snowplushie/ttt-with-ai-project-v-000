@@ -57,8 +57,5 @@ class Game
   end
   
   def play
-    9.times do
-      @board.turn
-    end
-  end
+    while 
 end
