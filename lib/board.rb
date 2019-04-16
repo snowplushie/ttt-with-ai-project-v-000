@@ -10,7 +10,7 @@ class Board
   end
   
   def display
-    puts "   |   |   "
+    puts "#{cell[0]}|#{cell[1]}|#{cell[2]}"
     puts "-----------"
     puts "   |   |   "
     puts "-----------"
