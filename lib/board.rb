@@ -18,6 +18,6 @@ class Board
   end
   
   def full?(board)
-    board.all?{|player| player == "X" || player == "O"
+    board.all?{|player| player == "X" || player == "O"}
   end
 end
