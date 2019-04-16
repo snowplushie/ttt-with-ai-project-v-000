@@ -19,6 +19,7 @@ class Board
   
   def position
     cells[input.to_i-1] = player
+  end
   
   def full?
     cells.all?{|player| player == "X" || player == "O"}
