@@ -52,6 +52,7 @@ class Game
     current_move = player.move(@board)
     if !@board.valid_move?(current_move)
       turn
+    end
     else
       puts "Turn: #{@board.turn_count + 1}\n"
       @board.display
