@@ -39,7 +39,9 @@ class Game
   end
   
   def winner
-    board.cells[won?[0]] if won?
+    if winning_combination = won?
+      @winner = @board.cells[winning_combination.first]
+    end
   end
   
   def turn
