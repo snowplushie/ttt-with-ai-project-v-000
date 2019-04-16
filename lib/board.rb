@@ -18,7 +18,7 @@ class Board
   end
   
   def position(input)
-    @cells[input.to_i-1] = player
+    @cells[input.to_i-1]
   end
   
   def full?
