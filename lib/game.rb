@@ -37,4 +37,10 @@ class Game
   def over?
     @board.full? || won?
   end
+  
+  def winner
+    if winning = won?
+      @board[winning.first]
+    end
+  end
 end
