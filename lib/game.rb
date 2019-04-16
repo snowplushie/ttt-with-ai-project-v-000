@@ -22,5 +22,11 @@ class Game
     @board.turn_count % 2 == 0 ? @player_1 : @player_2
   end
   
-  
+  def won?(board)
+    WIN_COMBINATIONS.detect do |combination|
+      board[combination[0]] == board[combination[1]] &&
+      board[combination[1]] == board[combination[2]] &&
+      position_taken?(board, combination[0])
+    end
+  end
 end
