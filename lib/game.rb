@@ -31,6 +31,6 @@ class Game
   end
   
   def draw?
-    @board.full? && !won?(board)
+    @board.full? && !won?
   end
 end
