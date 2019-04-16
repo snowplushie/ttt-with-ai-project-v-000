@@ -23,5 +23,6 @@ class Game
       return "X"
     else return "O"
   end
+end
   
  end
