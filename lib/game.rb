@@ -55,4 +55,10 @@ class Game
       board.display
     end
   end
+  
+  def play
+    9.times do
+      @board.turn
+    end
+  end
 end
