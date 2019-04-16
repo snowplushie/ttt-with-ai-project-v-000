@@ -39,7 +39,7 @@ class Board
   
   def update(input, player)
     if valid_move?(input)
-      @cells[input.to_i-1] == player
+      @cells[input.to_i-1] = player.piece
     end
   end
 end
