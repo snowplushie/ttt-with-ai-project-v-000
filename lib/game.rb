@@ -39,12 +39,10 @@ class Game
   end
   
   def winner
-    if won?
-      winning_combination = won?
-      @board.cells[winning_combination[0]]
-    else
-      nil
+    if winning_combination = won?
+      @winner = @board.cells[winning_combination.first]
     end
+  end
   
   def turn
     player = current_player
@@ -54,8 +52,8 @@ class Game
     else
       puts "Turn: #{@board.turn_count + 1}\n"
       @board.display
-      @board.update(current_move, current_player)
-      puts "#{current_player} moved #{current_move}"
+      @board.update(current_move, player)
+      puts "#{player.token} moved #{current_move}"
       @board.display
       puts "\n\n"
     end
