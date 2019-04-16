@@ -29,4 +29,6 @@ class Game
       @board.taken?(combination[0])
     end
   end
+  
+  
 end
