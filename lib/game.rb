@@ -18,7 +18,7 @@ class Game
     @player_2 = player_2
   end
   
-  def current_player
+  def current_player(turn_count)
     if turn_count(@board) % 2 == 0
       return "X"
     else return "O"
