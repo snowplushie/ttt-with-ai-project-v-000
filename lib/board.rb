@@ -16,4 +16,8 @@ class Board
     puts "-----------"
     puts " #{cells[6]} | #{cells[7]} | #{cells[8]} "
   end
+  
+  def full?(board)
+    board.all?{|player| player == "X" || player == "O"
+  end
 end
