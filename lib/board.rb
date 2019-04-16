@@ -10,10 +10,10 @@ class Board
   end
   
   def display
-    puts "#{cell[0]}|#{cell[1]}|#{cell[2]}"
+    puts "#{cells[0]}|#{cells[1]}|#{cells[2]}"
     puts "-----------"
-    puts "#{cell[3]}|#{cell[4]}|#{cell[5]}"
+    puts "#{cells[3]}|#{cells[4]}|#{cells[5]}"
     puts "-----------"
-    puts "#{cell[6]}|#{cell[7]}|#{cell[8]}"
+    puts "#{cells[6]}|#{cells[7]}|#{cells[8]}"
   end
 end
